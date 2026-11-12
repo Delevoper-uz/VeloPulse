@@ -1,0 +1,1224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" type="image/svg+xml" href="img/icon.svg">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="VeloPulse">
+  <meta property="og:locale" content="uz_UZ">
+  <meta property="og:title" content="VeloPulse — Onlayn do'kon">
+  <meta property="og:description" content="Tezlik, erkinlik va zamonaviy velosipedlar olami.">
+  <meta property="og:url" content="https://delevoper-uz.github.io/VeloPulse/">
+  <meta property="og:image" content="https://delevoper-uz.github.io/VeloPulse/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="VeloPulse">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="VeloPulse — Onlayn do'kon">
+  <meta name="twitter:description" content="Tezlik, erkinlik va zamonaviy velosipedlar olami.">
+  <meta name="twitter:image" content="https://delevoper-uz.github.io/VeloPulse/og-image.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+<body class="locked">
+
+  <div id="loader" class="loader">
+    <div class="loader-wheel">
+      <div class="loader-hub"></div>
+    </div>
+    <div class="loader-brand">VeloPulse</div>
+    <div class="loader-bar">
+      <div id="barFill" class="bar-fill"></div>
+    </div>
+    <div class="loader-status">
+      <i class="fa-solid fa-spinner fa-spin"></i>
+      <span>Yuklanmoqda...</span>
+    </div>
+  </div>
+
+  <header class="header">
+    <div class="header-inner">
+      <a href="#" class="logo">
+        <i class="fa-solid fa-bicycle"></i>
+        <span>VeloPulse</span>
+      </a>
+      <nav id="nav" class="nav">
+        <a href="#shop" onclick="toggleMenu('nav')">Do'kon</a>
+        <a href="#popular" onclick="toggleMenu('nav')">Mashhur</a>
+        <a href="#tarix" onclick="toggleMenu('nav')">Tarix</a>
+        <a href="#yetkazish" onclick="toggleMenu('nav')">Yetkazish</a>
+        <a href="#nega" onclick="toggleMenu('nav')">Afzalliklar</a>
+        <a href="#fikr" onclick="toggleMenu('nav')">Fikrlar</a>
+        <a href="#aloqa" onclick="toggleMenu('nav')">Aloqa</a>
+      </nav>
+      <div class="header-actions">
+        <button class="cart-btn" onclick="toggleMenu('cart')">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <span id="cartCount">0</span>
+        </button>
+        <button class="burger-btn" onclick="toggleMenu('nav')">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <div class="pill">Yangi mavsum</div>
+        <h1>Tezlik va <span>erkinlik</span> zamoni</h1>
+        <p class="hero-desc">Professional velosipedlar yordamida shahar ko'chalari va tog' yo'llarini zabt eting. Mukammal sifat va ishonchlilik.</p>
+        <div class="hero-buttons">
+          <a href="#shop" class="btn btn-primary">Xarid qilish</a>
+          <a href="#popular" class="btn btn-secondary">Batafsil</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat-card">
+            <i class="fa-solid fa-medal"></i>
+            <div>
+              <strong>26</strong>
+              <span>Model</span>
+            </div>
+          </div>
+          <div class="stat-card">
+            <i class="fa-solid fa-truck-fast"></i>
+            <div>
+              <strong>Bepul</strong>
+              <span>Yetkazish</span>
+            </div>
+          </div>
+          <div class="stat-card">
+            <i class="fa-solid fa-shield-halved"></i>
+            <div>
+              <strong>1 yil</strong>
+              <span>Kafolat</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="css-wheel">
+          <div class="wheel-spokes"></div>
+          <div class="wheel-center"></div>
+        </div>
+        <div class="hero-img-box">
+          <img src="imgs/velo-hero.jpg" alt="rasm" loading="eager">
+        </div>
+      </div>
+    </section>
+
+    <div class="road-divider">
+      <div class="road-line"></div>
+    </div>
+
+    <div class="marquee">
+      <div class="marquee-track">
+        <span>Tog'</span>
+        <span>·</span>
+        <span>Yo'l</span>
+        <span>·</span>
+        <span>Shahar</span>
+        <span>·</span>
+        <span>Elektr</span>
+        <span>·</span>
+        <span>Bolalar</span>
+        <span>·</span>
+        <span>Tog'</span>
+        <span>·</span>
+        <span>Yo'l</span>
+        <span>·</span>
+        <span>Shahar</span>
+        <span>·</span>
+        <span>Elektr</span>
+        <span>·</span>
+        <span>Bolalar</span>
+        <span>·</span>
+        <span>Tog'</span>
+        <span>·</span>
+        <span>Yo'l</span>
+        <span>·</span>
+        <span>Shahar</span>
+        <span>·</span>
+        <span>Elektr</span>
+        <span>·</span>
+        <span>Bolalar</span>
+        <span>·</span>
+        <span>Tog'</span>
+        <span>·</span>
+        <span>Yo'l</span>
+        <span>·</span>
+        <span>Shahar</span>
+        <span>·</span>
+        <span>Elektr</span>
+        <span>·</span>
+        <span>Bolalar</span>
+        <span>·</span>
+        <span>Tog'</span>
+        <span>·</span>
+        <span>Yo'l</span>
+        <span>·</span>
+        <span>Shahar</span>
+        <span>·</span>
+        <span>Elektr</span>
+        <span>·</span>
+        <span>Bolalar</span>
+        <span>·</span>
+        <span>Tog'</span>
+        <span>·</span>
+        <span>Yo'l</span>
+        <span>·</span>
+        <span>Shahar</span>
+        <span>·</span>
+        <span>Elektr</span>
+        <span>·</span>
+        <span>Bolalar</span>
+        <span>·</span>
+        <span>Tog'</span>
+        <span>·</span>
+        <span>Yo'l</span>
+        <span>·</span>
+        <span>Shahar</span>
+        <span>·</span>
+        <span>Elektr</span>
+        <span>·</span>
+        <span>Bolalar</span>
+        <span>·</span>
+        <span>Tog'</span>
+        <span>·</span>
+        <span>Yo'l</span>
+        <span>·</span>
+        <span>Shahar</span>
+        <span>·</span>
+        <span>Elektr</span>
+        <span>·</span>
+        <span>Bolalar</span>
+        <span>·</span>
+      </div>
+    </div>
+
+    <section id="shop" class="section shop-section">
+      <div class="section-header">
+        <div class="pill">01 / Do'kon</div>
+        <h2>Velosipedlar <span>kolleksiyasi</span></h2>
+        <p>Barcha turdagi ehtiyojingiz uchun maxsus tanlangan professional modellar</p>
+      </div>
+
+      <input type="checkbox" id="more" class="more-checkbox">
+
+      <div class="grid">
+        <div class="product-card">
+          <div class="product-img">
+            <img src="imgs/velo01.jpg" alt="rasm" loading="lazy">
+            <span class="price-chip">2 400 000 so'm</span>
+          </div>
+          <div class="product-body">
+            <span class="product-cat">Tog' velosipedi</span>
+            <h3>Apex Pro</h3>
+            <p class="product-feat">21 tezlik, alyuminiy rama</p>
+            <div class="rating">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <button class="btn btn-primary" onclick="addToCart(this)" data-name="Apex Pro" data-price="2400000">Savatchaga qo'shish</button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-img">
+            <img src="imgs/velo02.jpg" alt="rasm" loading="lazy">
+            <span class="price-chip">3 100 000 so'm</span>
+          </div>
+          <div class="product-body">
+            <span class="product-cat">Tog' velosipedi</span>
+            <h3>Trail Master</h3>
+            <p class="product-feat">24 tezlik, gidravlik tormoz</p>
+            <div class="rating">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <button class="btn btn-primary" onclick="addToCart(this)" data-name="Trail Master" data-price="3100000">Savatchaga qo'shish</button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-img">
+            <img src="imgs/velo03.jpg" alt="rasm" loading="lazy">
+            <span class="price-chip">4 500 000 so'm</span>
+          </div>
+          <div class="product-body">
+            <span class="product-cat">Tog' velosipedi</span>
+            <h3>Summit X</h3>
+            <p class="product-feat">27 tezlik, karbon vilka</p>
+            <div class="rating">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <button class="btn btn-primary" onclick="addToCart(this)" data-name="Summit X" data-price="4500000">Savatchaga qo'shish</button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-img">
+            <img src="imgs/velo04.jpg" alt="rasm" loading="lazy">
+            <span class="price-chip">5 200 000 so'm</span>
+          </div>
+          <div class="product-body">
+            <span class="product-cat">Tog' velosipedi</span>
+            <h3>Ranger Elite</h3>
+            <p class="product-feat">30 tezlik, Shimano XT</p>
+            <div class="rating">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <button class="btn btn-primary" onclick="addToCart(this)" data-name="Ranger Elite" data-price="5200000">Savatchaga qo'shish</button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-img">
+            <img src="imgs/velo05.jpg" alt="rasm" loading="lazy">
+            <span class="price-chip">6 000 000 so'm</span>
+          </div>
+          <div class="product-body">
+            <span class="product-cat">Yo'l velosipedi</span>
+            <h3>Aero Speed</h3>
+            <p class="product-feat">Aerodinamik rama, 700c</p>
+            <div class="rating">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <button class="btn btn-primary" onclick="addToCart(this)" data-name="Aero Speed" data-price="6000000">Savatchaga qo'shish</button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-img">
+            <img src="imgs/velo06.jpg" alt="rasm" loading="lazy">
+            <span class="price-chip">7 800 000 so'm</span>
+          </div>
+          <div class="product-body">
+            <span class="product-cat">Yo'l velosipedi</span>
+            <h3>Road Master</h3>
+            <p class="product-feat">Karbon rama, yengil vazn</p>
+            <div class="rating">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <button class="btn btn-primary" onclick="addToCart(this)" data-name="Road Master" data-price="7800000">Savatchaga qo'shish</button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-img">
+            <img src="imgs/velo07.jpg" alt="rasm" loading="lazy">
+            <span class="price-chip">8 500 000 so'm</span>
+          </div>
+          <div class="product-body">
+            <span class="product-cat">Yo'l velosipedi</span>
+            <h3>Velocita</h3>
+            <p class="product-feat">Poyga uchun maxsus dizayn</p>
+            <div class="rating">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <button class="btn btn-primary" onclick="addToCart(this)" data-name="Velocita" data-price="8500000">Savatchaga qo'shish</button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-img">
+            <img src="imgs/velo08.jpg" alt="rasm" loading="lazy">
+            <span class="price-chip">9 200 000 so'm</span>
+          </div>
+          <div class="product-body">
+            <span class="product-cat">Yo'l velosipedi</span>
+            <h3>Strada Pro</h3>
+            <p class="product-feat">Professional shosse shinalari</p>
+            <div class="rating">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <button class="btn btn-primary" onclick="addToCart(this)" data-name="Strada Pro" data-price="9200000">Savatchaga qo'shish</button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-img">
+            <img src="imgs/velo09.jpg" alt="rasm" loading="lazy">
+            <span class="price-chip">3 400 000 so'm</span>
+          </div>
+          <div class="product-body">
+            <span class="product-cat">Shahar velosipedi</span>
+            <h3>Urban City</h3>
+            <p class="product-feat">Qulay o'rindiq, savat bilan</p>
+            <div class="rating">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <button class="btn btn-primary" onclick="addToCart(this)" data-name="Urban City" data-price="3400000">Savatchaga qo'shish</button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-img">
+            <img src="imgs/velo10.jpg" alt="rasm" loading="lazy">
+            <span class="price-chip">4 000 000 so'm</span>
+          </div>
+          <div class="product-body">
+            <span class="product-cat">Shahar velosipedi</span>
+            <h3>Metro Cruiser</h3>
+            <p class="product-feat">Planeta uzatmalar tizimi</p>
+            <div class="rating">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <button class="btn btn-primary" onclick="addToCart(this)" data-name="Metro Cruiser" data-price="4000000">Savatchaga qo'shish</button>
+          </div>
+        </div>
+
+        <div class="product-card extra">
+          <div class="product-img">
+            <img src="imgs/velo11.jpg" alt="rasm" loading="lazy">
+            <span class="price-chip">4 800 000 so'm</span>
+          </div>
+          <div class="product-body">
+            <span class="product-cat">Shahar velosipedi</span>
+            <h3>Daily Glide</h3>
+            <p class="product-feat">Kundalik qatnov uchun qulay</p>
+            <div class="rating">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <button class="btn btn-primary" onclick="addToCart(this)" data-name="Daily Glide" data-price="4800000">Savatchaga qo'shish</button>
+          </div>
+        </div>
+
+        <div class="product-card extra">
+          <div class="product-img">
+            <img src="imgs/velo12.jpg" alt="rasm" loading="lazy">
+            <span class="price-chip">5 500 000 so'm</span>
+          </div>
+          <div class="product-body">
+            <span class="product-cat">Shahar velosipedi</span>
+            <h3>Capital Style</h3>
+            <p class="product-feat">Klassik dizayn va chidamlilik</p>
+            <div class="rating">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <button class="btn btn-primary" onclick="addToCart(this)" data-name="Capital Style" data-price="5500000">Savatchaga qo'shish</button>
+          </div>
+        </div>
+
+        <div class="product-card extra">
+          <div class="product-img">
+            <img src="imgs/velo13.jpg" alt="rasm" loading="lazy">
+            <span class="price-chip">12 500 000 so'm</span>
+          </div>
+          <div class="product-body">
+            <span class="product-cat">Elektr velosipedi</span>
+            <h3>Volt E-Bike</h3>
+            <p class="product-feat">250W motor, 70 km masofa</p>
+            <div class="rating">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <button class="btn btn-primary" onclick="addToCart(this)" data-name="Volt E-Bike" data-price="12500000">Savatchaga qo'shish</button>
+          </div>
+        </div>
+
+        <div class="product-card extra">
+          <div class="product-img">
+            <img src="imgs/velo14.jpg" alt="rasm" loading="lazy">
+            <span class="price-chip">15 000 000 so'm</span>
+          </div>
+          <div class="product-body">
+            <span class="product-cat">Elektr velosipedi</span>
+            <h3>Thunder Volt</h3>
+            <p class="product-feat">500W motor, tezkor quvvatlash</p>
+            <div class="rating">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <button class="btn btn-primary" onclick="addToCart(this)" data-name="Thunder Volt" data-price="15000000">Savatchaga qo'shish</button>
+          </div>
+        </div>
+
+        <div class="product-card extra">
+          <div class="product-img">
+            <img src="imgs/velo15.jpg" alt="rasm" loading="lazy">
+            <span class="price-chip">18 200 000 so'm</span>
+          </div>
+          <div class="product-body">
+            <span class="product-cat">Elektr velosipedi</span>
+            <h3>Cyber Trek</h3>
+            <p class="product-feat">Keng shinalar, kuchli akkumulyator</p>
+            <div class="rating">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <button class="btn btn-primary" onclick="addToCart(this)" data-name="Cyber Trek" data-price="18200000">Savatchaga qo'shish</button>
+          </div>
+        </div>
+
+        <div class="product-card extra">
+          <div class="product-img">
+            <img src="imgs/velo16.jpg" alt="rasm" loading="lazy">
+            <span class="price-chip">22 000 000 so'm</span>
+          </div>
+          <div class="product-body">
+            <span class="product-cat">Elektr velosipedi</span>
+            <h3>Quantum Max</h3>
+            <p class="product-feat">Premium sinf e-bike, to'liq osma</p>
+            <div class="rating">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <button class="btn btn-primary" onclick="addToCart(this)" data-name="Quantum Max" data-price="22000000">Savatchaga qo'shish</button>
+          </div>
+        </div>
+
+        <div class="product-card extra">
+          <div class="product-img">
+            <img src="imgs/velo17.jpg" alt="rasm" loading="lazy">
+            <span class="price-chip">1 500 000 so'm</span>
+          </div>
+          <div class="product-body">
+            <span class="product-cat">Bolalar velosipedi</span>
+            <h3>Mini Rider</h3>
+            <p class="product-feat">12 dyuym, xavfsiz yon g'ildiraklar</p>
+            <div class="rating">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <button class="btn btn-primary" onclick="addToCart(this)" data-name="Mini Rider" data-price="1500000">Savatchaga qo'shish</button>
+          </div>
+        </div>
+
+        <div class="product-card extra">
+          <div class="product-img">
+            <img src="imgs/velo18.jpg" alt="rasm" loading="lazy">
+            <span class="price-chip">1 900 000 so'm</span>
+          </div>
+          <div class="product-body">
+            <span class="product-cat">Bolalar velosipedi</span>
+            <h3>Junior Sport</h3>
+            <p class="product-feat">16 dyuym, yengil polad rama</p>
+            <div class="rating">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <button class="btn btn-primary" onclick="addToCart(this)" data-name="Junior Sport" data-price="1900000">Savatchaga qo'shish</button>
+          </div>
+        </div>
+
+        <div class="product-card extra">
+          <div class="product-img">
+            <img src="imgs/velo19.jpg" alt="rasm" loading="lazy">
+            <span class="price-chip">2 300 000 so'm</span>
+          </div>
+          <div class="product-body">
+            <span class="product-cat">Bolalar velosipedi</span>
+            <h3>Kid Racer</h3>
+            <p class="product-feat">20 dyuym, tezlik uzatmali</p>
+            <div class="rating">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <button class="btn btn-primary" onclick="addToCart(this)" data-name="Kid Racer" data-price="2300000">Savatchaga qo'shish</button>
+          </div>
+        </div>
+
+        <div class="product-card extra">
+          <div class="product-img">
+            <img src="imgs/velo20.jpg" alt="rasm" loading="lazy">
+            <span class="price-chip">2 800 000 so'm</span>
+          </div>
+          <div class="product-body">
+            <span class="product-cat">Bolalar velosipedi</span>
+            <h3>Teen Force</h3>
+            <p class="product-feat">24 dyuym, o'smirlar uchun maxsus</p>
+            <div class="rating">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <button class="btn btn-primary" onclick="addToCart(this)" data-name="Teen Force" data-price="2800000">Savatchaga qo'shish</button>
+          </div>
+        </div>
+      </div>
+
+      <label for="more" class="more-btn">Yana 10 ta ko'rsatish</label>
+    </section>
+
+    <div class="road-divider">
+      <div class="road-line"></div>
+    </div>
+
+    <section id="popular" class="section popular-section">
+      <div class="section-header">
+        <div class="pill">02 / Mashhur</div>
+        <h2>Flagman <span>modellar</span></h2>
+        <p>Eng ko'p tanlangan va yuqori texnologiyali flagman velosipedlarimiz bilan tanishing</p>
+      </div>
+
+      <div class="popular-grid">
+        <div class="popular-card">
+          <div class="popular-img">
+            <img src="imgs/velo21.jpg" alt="rasm" loading="lazy">
+          </div>
+          <div class="popular-content">
+            <h3>Titanium X1</h3>
+            <p>O'ta yengil titan rama va eng ilg'or komponentlar majmui.</p>
+            <a href="#oyna-1" class="btn btn-secondary">Batafsil</a>
+          </div>
+        </div>
+
+        <div class="popular-card">
+          <div class="popular-img">
+            <img src="imgs/velo22.jpg" alt="rasm" loading="lazy">
+          </div>
+          <div class="popular-content">
+            <h3>Carbon Blade</h3>
+            <p>Shosse poygalari uchun yaratilgan mukammal aerodinamik shohasar.</p>
+            <a href="#oyna-2" class="btn btn-secondary">Batafsil</a>
+          </div>
+        </div>
+
+        <div class="popular-card">
+          <div class="popular-img">
+            <img src="imgs/velo23.jpg" alt="rasm" loading="lazy">
+          </div>
+          <div class="popular-content">
+            <h3>Cyber Beast</h3>
+            <p>Qiyin tog' yo'llari va ekstremal sharoitlar uchun elektr quvvati.</p>
+            <a href="#oyna-3" class="btn btn-secondary">Batafsil</a>
+          </div>
+        </div>
+
+        <div class="popular-card">
+          <div class="popular-img">
+            <img src="imgs/velo24.jpg" alt="rasm" loading="lazy">
+          </div>
+          <div class="popular-content">
+            <h3>Urban Phantom</h3>
+            <p>Shahar bo'ylab shiddatli va qulay harakatlanish uchun ideal tanlov.</p>
+            <a href="#oyna-4" class="btn btn-secondary">Batafsil</a>
+          </div>
+        </div>
+
+        <div class="popular-card">
+          <div class="popular-img">
+            <img src="imgs/velo25.jpg" alt="rasm" loading="lazy">
+          </div>
+          <div class="popular-content">
+            <h3>Enduro Beast</h3>
+            <p>Har qanday relefni yengib o'tuvchi kuchli ikki osma tizimli velosiped.</p>
+            <a href="#oyna-5" class="btn btn-secondary">Batafsil</a>
+          </div>
+        </div>
+
+        <div class="popular-card">
+          <div class="popular-img">
+            <img src="imgs/velo26.jpg" alt="rasm" loading="lazy">
+          </div>
+          <div class="popular-content">
+            <h3>Horizon Gravel</h3>
+            <p>Asfalt va tuproq yo'llar uchun birdek moslashgan universal sayohatchi.</p>
+            <a href="#oyna-6" class="btn btn-secondary">Batafsil</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div id="oyna-1" class="modal">
+      <div class="modal-box">
+        <a href="#popular" class="modal-close"><i class="fa-solid fa-xmark"></i></a>
+        <div class="modal-img">
+          <img src="imgs/velo21.jpg" alt="rasm" loading="lazy">
+        </div>
+        <div class="modal-info">
+          <h3>Titanium X1</h3>
+          <p>O'ta yengil titan rama, eng ilg'or komponentlar majmui va yuqori chidamlilik. Professionallar uchun maxsus ishlab chiqilgan flagman model.</p>
+          <div class="modal-price">14 500 000 so'm</div>
+          <button class="btn btn-primary" onclick="addToCart(this)" data-name="Titanium X1" data-price="14500000">Savatchaga qo'shish</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="oyna-2" class="modal">
+      <div class="modal-box">
+        <a href="#popular" class="modal-close"><i class="fa-solid fa-xmark"></i></a>
+        <div class="modal-img">
+          <img src="imgs/velo22.jpg" alt="rasm" loading="lazy">
+        </div>
+        <div class="modal-info">
+          <h3>Carbon Blade</h3>
+          <p>Shosse poygalari uchun yaratilgan mukammal aerodinamik shohasar. Tezlikni sevuvchilar uchun eng yaxshi tanlov.</p>
+          <div class="modal-price">16 800 000 so'm</div>
+          <button class="btn btn-primary" onclick="addToCart(this)" data-name="Carbon Blade" data-price="16800000">Savatchaga qo'shish</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="oyna-3" class="modal">
+      <div class="modal-box">
+        <a href="#popular" class="modal-close"><i class="fa-solid fa-xmark"></i></a>
+        <div class="modal-img">
+          <img src="imgs/velo23.jpg" alt="rasm" loading="lazy">
+        </div>
+        <div class="modal-info">
+          <h3>Cyber Beast</h3>
+          <p>Qiyin tog' yo'llari va ekstremal sharoitlar uchun elektr quvvati. Katta quvvatli akkumulyator va kuchli motor.</p>
+          <div class="modal-price">24 000 000 so'm</div>
+          <button class="btn btn-primary" onclick="addToCart(this)" data-name="Cyber Beast" data-price="24000000">Savatchaga qo'shish</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="oyna-4" class="modal">
+      <div class="modal-box">
+        <a href="#popular" class="modal-close"><i class="fa-solid fa-xmark"></i></a>
+        <div class="modal-img">
+          <img src="imgs/velo24.jpg" alt="rasm" loading="lazy">
+        </div>
+        <div class="modal-info">
+          <h3>Urban Phantom</h3>
+          <p>Shahar bo'ylab shiddatli va qulay harakatlanish uchun ideal tanlov. Zamonaviy dizayn va ixcham tuzilish.</p>
+          <div class="modal-price">7 500 000 so'm</div>
+          <button class="btn btn-primary" onclick="addToCart(this)" data-name="Urban Phantom" data-price="7500000">Savatchaga qo'shish</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="oyna-5" class="modal">
+      <div class="modal-box">
+        <a href="#popular" class="modal-close"><i class="fa-solid fa-xmark"></i></a>
+        <div class="modal-img">
+          <img src="imgs/velo25.jpg" alt="rasm" loading="lazy">
+        </div>
+        <div class="modal-info">
+          <h3>Enduro Beast</h3>
+          <p>Har qanday relefni yengib o'tuvchi kuchli ikki osma tizimli velosiped. Maksimal qulaylik va xavfsizlik.</p>
+          <div class="modal-price">19 500 000 so'm</div>
+          <button class="btn btn-primary" onclick="addToCart(this)" data-name="Enduro Beast" data-price="19500000">Savatchaga qo'shish</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="oyna-6" class="modal">
+      <div class="modal-box">
+        <a href="#popular" class="modal-close"><i class="fa-solid fa-xmark"></i></a>
+        <div class="modal-img">
+          <img src="imgs/velo26.jpg" alt="rasm" loading="lazy">
+        </div>
+        <div class="modal-info">
+          <h3>Horizon Gravel</h3>
+          <p>Asfalt va tuproq yo'llar uchun birdek moslashgan universal sayohatchi. Uzoq masofalar uchun ishonchli hamroh.</p>
+          <div class="modal-price">11 200 000 so'm</div>
+          <button class="btn btn-primary" onclick="addToCart(this)" data-name="Horizon Gravel" data-price="11200000">Savatchaga qo'shish</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="road-divider">
+      <div class="road-line"></div>
+    </div>
+
+    <section id="tarix" class="section history-section">
+      <div class="section-header">
+        <div class="pill">03 / Evolutsiya</div>
+        <h2>Velosiped <span>tarixi</span></h2>
+        <p>Oddiy yog'och moslamadan zamonaviy yuqori texnologiyali transportgacha bo'lgan yo'l</p>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-img">
+            <img src="imgs/tarix1.jpg" alt="rasm" loading="lazy">
+          </div>
+          <div class="timeline-content">
+            <span class="timeline-year">1817</span>
+            <h3>Karl Drais</h3>
+            <p>Germaniyada Karl Drais tomonidan pedalsiz, oyoq bilan Itariladigan dastlabki "yuguruvchi mashina" ixtiro qilindi.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-img">
+            <img src="imgs/tarix2.jpg" alt="rasm" loading="lazy">
+          </div>
+          <div class="timeline-content">
+            <span class="timeline-year">1860</span>
+            <h3>Fransuzcha innovatsiya</h3>
+            <p>Fransiyada to'g'ridan-to'g'ri old g'ildirakka pedal va boshqaruv mexanizmi o'rnatilgan ilk velosipedlar yaratildi.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-img">
+            <img src="imgs/tarix3.jpg" alt="rasm" loading="lazy">
+          </div>
+          <div class="timeline-content">
+            <span class="timeline-year">1870</span>
+            <h3>Penny-farthing</h3>
+            <p>Jeyms Starli tomonidan katta old g'ildirakli va kichik orqa g'ildirakli "Penny-farthing" velosipedi ommalashdi.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-img">
+            <img src="imgs/tarix4.jpg" alt="rasm" loading="lazy">
+          </div>
+          <div class="timeline-content">
+            <span class="timeline-year">1885</span>
+            <h3>Rover xavfsizligi</h3>
+            <p>Jon Kemp Starli zanjirli uzatma va bir xil o'lchamdagi g'ildiraklarga ega zamonaviy "Rover" xavfsiz velosipedini taqdim etdi.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-img">
+            <img src="imgs/tarix5.jpg" alt="rasm" loading="lazy">
+          </div>
+          <div class="timeline-content">
+            <span class="timeline-year">1888</span>
+            <h3>Dunlop shinalari</h3>
+            <p>Jon Boyd Dunlop tomonidan havo to'ldirilgan rezina shinalar ixtiro qilinib, haydash qulayligi keskin oshirildi.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="road-divider">
+      <div class="road-line"></div>
+    </div>
+
+    <section id="yetkazish" class="section delivery-section">
+      <div class="section-header">
+        <div class="pill">04 / Logistika</div>
+        <h2>Yetkazib berish <span>jarayoni</span></h2>
+        <p>Buyurtmangiz qanday qilib sizning manzilingizga yetib borishining 5 ta bosqichi</p>
+      </div>
+
+      <div class="delivery-container">
+        <div class="delivery-steps">
+          <div class="delivery-step">
+            <div class="step-num"><i class="fa-solid fa-circle-check"></i></div>
+            <div class="step-info">
+              <h3>Buyurtma qabul qilindi</h3>
+              <p>Sizning buyurtmangiz tizimda ro'yxatga olindi va tekshirildi.</p>
+            </div>
+          </div>
+          <div class="step-curve curve-1"></div>
+
+          <div class="delivery-step">
+            <div class="step-num"><i class="fa-solid fa-box-open"></i></div>
+            <div class="step-info">
+              <h3>Buyurtma tayyorlanmoqda</h3>
+              <p>Mutaxassislar velosipedni sozlab, maxsus qutiga joylamoqda.</p>
+            </div>
+          </div>
+          <div class="step-curve curve-2"></div>
+
+          <div class="delivery-step">
+            <div class="step-num"><i class="fa-solid fa-user-check"></i></div>
+            <div class="step-info">
+              <h3>Kuryerga topshirildi</h3>
+              <p>Ishonchli yetkazib berish xizmati kuryeriga mahsulot berildi.</p>
+            </div>
+          </div>
+          <div class="step-curve curve-1"></div>
+
+          <div class="delivery-step">
+            <div class="step-num"><i class="fa-solid fa-truck-fast"></i></div>
+            <div class="step-info">
+              <h3>Manzilga yetkazilmoqda</h3>
+              <p>Kuryer ko'rsatilgan manzil tomon harakatlanmoqda.</p>
+            </div>
+          </div>
+          <div class="step-curve curve-2"></div>
+
+          <div class="delivery-step">
+            <div class="step-num"><i class="fa-solid fa-house-circle-check"></i></div>
+            <div class="step-info">
+              <h3>Buyurtma topshirildi</h3>
+              <p>Siz yangi velosipedingizni qabul qilib oldingiz. Maktub uchun rahmat!</p>
+            </div>
+          </div>
+        </div>
+        <div class="delivery-visual">
+          <img src="imgs/yetkazish.jpg" alt="rasm" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <div class="road-divider">
+      <div class="road-line"></div>
+    </div>
+
+    <section id="nega" class="section bento-section">
+      <div class="section-header">
+        <div class="pill">05 / Afzalliklar</div>
+        <h2>Nima uchun <span>bizni</span> tanlashadi?</h2>
+        <p>Bizning ustunliklarimiz va professional yondashuvimiz</p>
+      </div>
+
+      <div class="bento-grid">
+        <div class="bento-card bento-a">
+          <div class="bento-text">
+            <h3>Sifatli ehtiyot qismlar</h3>
+            <p>Dunyoning yetakchi brendlari detallari bilan jihozlangan mustahkam tuzilish.</p>
+            <div class="bento-chips">
+              <span>Alyuminiy rama</span>
+              <span>Shimano uzatmalar</span>
+              <span>Disk tormoz</span>
+            </div>
+          </div>
+          <div class="bento-big-num">
+            <span>100%</span>
+            <small>Kafolatlangan sifat</small>
+          </div>
+          <div class="bento-img">
+            <img src="imgs/nega.jpg" alt="rasm" loading="lazy">
+          </div>
+        </div>
+
+        <div class="bento-card bento-b">
+          <i class="fa-solid fa-tags"></i>
+          <h3>Qulay narxlar</h3>
+          <p>Vositachilarsiz to'g'ridan-to'g'ri yetkazib berish evaziga eng maqbul narxlar.</p>
+        </div>
+
+        <div class="bento-card bento-c">
+          <i class="fa-solid fa-truck-fast"></i>
+          <h3>Tezkor yetkazish</h3>
+          <p>O'zbekiston bo'ylab eng qisqa muddatlarda manzilingizga yetkazamiz.</p>
+        </div>
+
+        <div class="bento-card bento-d">
+          <i class="fa-solid fa-wrench"></i>
+          <h3>Bepul servis</h3>
+          <p>Sotib olingandan keyingi ilk 6 oy davomida bepul texnik ko'rik va sozlash.</p>
+        </div>
+
+        <div class="bento-card bento-e">
+          <i class="fa-solid fa-shield-halved"></i>
+          <h3>1 yil kafolat</h3>
+          <p>Barcha turdagi mexanik va konstruktiv qismlarga rasmiy 1 yillik kafolat.</p>
+        </div>
+
+        <div class="bento-card bento-f">
+          <div class="stat-item">
+            <strong>5 000+</strong>
+            <span>Mamnun mijoz</span>
+          </div>
+          <div class="stat-item">
+            <strong>26</strong>
+            <span>Model</span>
+          </div>
+          <div class="stat-item">
+            <strong>24 soat</strong>
+            <span>Tezkor yetkazish</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="road-divider">
+      <div class="road-line"></div>
+    </div>
+
+    <section id="fikr" class="section review-section">
+      <div class="section-header">
+        <div class="pill">06 / Fikrlar</div>
+        <h2>Mijozlarimiz <span>nima deydi?</span></h2>
+        <p>Minglab mamnun xaridorlarimizning samimiy fikrlari va taassurotlari</p>
+      </div>
+
+      <div class="marquee-reviews">
+        <div class="track-reviews">
+          <div class="review-card">
+            <div class="rating">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p>"Velosiped juda ajoyib ekan. Sifati kutilganidan ham yuqori chiqdi, yetkazib berish ham tez bo'ldi."</p>
+            <div class="review-user">
+              <img src="imgs/odam01.jpg" alt="rasm" loading="lazy">
+              <div>
+                <strong>Jasur Karimov</strong>
+                <span>Toshkent</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="review-card">
+            <div class="rating">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p>"Farzandim uchun olgan kichik velosipedimiz juda yoqdi. Xavfsiz va chiroyli yasalgan."</p>
+            <div class="review-user">
+              <img src="imgs/odam02.jpg" alt="rasm" loading="lazy">
+              <div>
+                <strong>Malika Rahimova</strong>
+                <span>Samarqand</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="review-card">
+            <div class="rating">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p>"Tog' velosipedini oldim, tog'larda sinab ko'rdim. Juda chidamli va boshqarish oson."</p>
+            <div class="review-user">
+              <img src="imgs/odam03.jpg" alt="rasm" loading="lazy">
+              <div>
+                <strong>Sardorbek Tursunov</strong>
+                <span>Namangan</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="review-card">
+            <div class="rating">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p>"Shahar uchun elektromodelni tanladim. Har kuni ishga borib kelishda juda qo'l kelmoqda."</p>
+            <div class="review-user">
+              <img src="imgs/odam04.jpg" alt="rasm" loading="lazy">
+              <div>
+                <strong>Dilshodbek Nazarov</strong>
+                <span>Buxoro</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="review-card">
+            <div class="rating">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p>"Xizmat ko'rsatish darajasi a'lo darajada. Mutaxassislar barcha savollarimga javob berishdi."</p>
+            <div class="review-user">
+              <img src="imgs/odam05.jpg" alt="rasm" loading="lazy">
+              <div>
+                <strong>Zilola Umarova</strong>
+                <span>Andijon</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="review-card">
+            <div class="rating">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p>"Narxlar boshqa joylarga qaraganda ancha qulay ekan. Barchaga tavsiya qilaman!"</p>
+            <div class="review-user">
+              <img src="imgs/odam06.jpg" alt="rasm" loading="lazy">
+              <div>
+                <strong>Bobur Alimov</strong>
+                <span>Farg'ona</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="review-card">
+            <div class="rating">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p>"Velosiped juda ajoyib ekan. Sifati kutilganidan ham yuqori chiqdi, yetkazib berish ham tez bo'ldi."</p>
+            <div class="review-user">
+              <img src="imgs/odam01.jpg" alt="rasm" loading="lazy">
+              <div>
+                <strong>Jasur Karimov</strong>
+                <span>Toshkent</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="review-card">
+            <div class="rating">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p>"Farzandim uchun olgan kichik velosipedimiz juda yoqdi. Xavfsiz va chiroyli yasalgan."</p>
+            <div class="review-user">
+              <img src="imgs/odam02.jpg" alt="rasm" loading="lazy">
+              <div>
+                <strong>Malika Rahimova</strong>
+                <span>Samarqand</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="review-card">
+            <div class="rating">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p>"Tog' velosipedini oldim, tog'larda sinab ko'rdim. Juda chidamli va boshqarish oson."</p>
+            <div class="review-user">
+              <img src="imgs/odam03.jpg" alt="rasm" loading="lazy">
+              <div>
+                <strong>Sardorbek Tursunov</strong>
+                <span>Namangan</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="review-card">
+            <div class="rating">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p>"Shahar uchun elektromodelni tanladim. Har kuni ishga borib kelishda juda qo'l kelmoqda."</p>
+            <div class="review-user">
+              <img src="imgs/odam04.jpg" alt="rasm" loading="lazy">
+              <div>
+                <strong>Dilshodbek Nazarov</strong>
+                <span>Buxoro</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="review-card">
+            <div class="rating">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p>"Xizmat ko'rsatish darajasi a'lo darajada. Mutaxassislar barcha savollarimga javob berishdi."</p>
+            <div class="review-user">
+              <img src="imgs/odam05.jpg" alt="rasm" loading="lazy">
+              <div>
+                <strong>Zilola Umarova</strong>
+                <span>Andijon</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="review-card">
+            <div class="rating">
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+            </div>
+            <p>"Narxlar boshqa joylarga qaraganda ancha qulay ekan. Barchaga tavsiya qilaman!"</p>
+            <div class="review-user">
+              <img src="imgs/odam06.jpg" alt="rasm" loading="lazy">
+              <div>
+                <strong>Bobur Alimov</strong>
+                <span>Farg'ona</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="road-divider">
+      <div class="road-line"></div>
+    </div>
+
+    <section id="aloqa" class="section contact-section">
+      <div class="section-header">
+        <div class="pill">07 / Aloqa va Savollar</div>
+        <h2>Bog'lanish va <span>savollar</span></h2>
+        <p>Yangiliklardan xabardor bo'ling va eng ko'p beriladigan savollarga javob oling</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="subscribe-box">
+          <h3>Yangiliklarga obuna bo'ling</h3>
+          <p>Yangi modellar va chegirmalar haqida birinchilardan bo'lib xabardor bo'ling.</p>
+          <form onsubmit="showMessage('Obuna muvaffaqiyatli bo\'ldi', 'success'); this.reset(); return false;">
+            <input type="email" required placeholder="Email manzilingiz">
+            <button type="submit" class="btn btn-primary">Obuna bo'lish</button>
+          </form>
+        </div>
+
+        <div class="faq-box">
+          <h3>Ko'p beriladigan savollar</h3>
+          
+          <details name="faq" class="faq-item">
+            <summary>
+              <span>Yetkazib berish qancha vaqt oladi?</span>
+              <i class="fa-solid fa-chevron-down"></i>
+            </summary>
+            <p>Toshkent shahri bo'ylab 24 soat ichida, viloyat markazlariga esa 2-3 ish kuni davomida yetkazib beriladi.</p>
+          </details>
+
+          <details name="faq" class="faq-item">
+            <summary>
+              <span>Kafolat qanday amal qiladi?</span>
+              <i class="fa-solid fa-chevron-down"></i>
+            </summary>
+            <p>Barcha velosipedlarning rama va asosiy mexanik qismlariga rasmiy 1 yillik kafolat taqdim etiladi.</p>
+          </details>
+
+          <details name="faq" class="faq-item">
+            <summary>
+              <span>Servis xizmati mavjudmi?</span>
+              <i class="fa-solid fa-chevron-down"></i>
+            </summary>
+            <p>Ha, xarid qilinganidan keyin ilk 6 oy davomida barcha servis markazlarimizda bepul texnik ko'rsatuv mavjud.</p>
+          </details>
+
+          <details name="faq" class="faq-item">
+            <summary>
+              <span>To'lov qanday amalga oshiriladi?</span>
+              <i class="fa-solid fa-chevron-down"></i>
+            </summary>
+            <p>Buyurtmani qabul qilib olgandan keyin naqd pulda yoki kuryerga plastik karta orqali to'lov qilishingiz mumkin.</p>
+          </details>
+
+          <details name="faq" class="faq-item">
+            <summary>
+              <span>O'lchamni qanday tanlash mumkin?</span>
+              <i class="fa-solid fa-chevron-down"></i>
+            </summary>
+            <p>Bo'yingiz balandligiga qarab mos keluvchi rama o'lchamini mahsulot tavsifidagi jadval yordamida aniqlashingiz mumkin.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-col">
+        <a href="#" class="logo">
+          <i class="fa-solid fa-bicycle"></i>
+          <span>VeloPulse</span>
+        </a>
+        <p>Tezlik, erkinlik va zamonaviy velosipedlar dunyosi. Professional darajadagi xaridlar va ishonchli xizmat.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Navigatsiya</h4>
+        <a href="#shop">Do'kon</a>
+        <a href="#popular">Mashhur</a>
+        <a href="#tarix">Tarix</a>
+        <a href="#yetkazish">Yetkazish</a>
+      </div>
+      <div class="footer-col">
+        <h4>Yordam</h4>
+        <a href="#aloqa">Bog'lanish</a>
+        <a href="#fikr">Mijozlar fikri</a>
+        <a href="#nega">Afzalliklar</a>
+      </div>
+      <div class="footer-col">
+        <h4>Ijtimoiy tarmoqlar</h4>
+        <div class="social-icons">
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-telegram"></i></a>
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 VeloPulse. Barcha huquqlar himoyalangan.</p>
+    </div>
+  </footer>
+
+  <div id="cart" class="cart-panel">
+    <div class="cart-header">
+      <h3>Savatcha</h3>
+      <button onclick="toggleMenu('cart')"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <div class="cart-body">
+      <p>Tanlangan mahsulotlar savatchada jamlanadi.</p>
+    </div>
+    <div class="cart-footer">
+      <div class="cart-total-row">
+        <span>Jami:</span>
+        <strong id="cartTotal">0 so'm</strong>
+      </div>
+      <button class="btn btn-primary" onclick="orderNow()">Buyurtma berish</button>
+    </div>
+  </div>
+  <div id="overlay" class="overlay" onclick="toggleMenu('cart')"></div>
+
+  <div id="notes"></div>
+
+  <script src="main.js"></script>
+</body>
+</html>
